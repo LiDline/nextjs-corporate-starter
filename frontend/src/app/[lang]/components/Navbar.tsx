@@ -75,6 +75,10 @@ export default function Navbar({
                       {...item}
                     />
                   ))}
+
+                  <hr className="border-t border-gray-300" />
+
+                  <>dsgdfgdfg</>
                 </div>
               </div>
             </div>

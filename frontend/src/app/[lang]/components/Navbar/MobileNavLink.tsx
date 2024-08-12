@@ -12,8 +12,9 @@ export default function MobileNavLink({ url, text, closeMenu }: MobileNavLink) {
   const handleClick = () => {
     closeMenu();
   };
+
   return (
-    <a className="flex">
+    <li className="flex">
       <Link
         href={url}
         onClick={handleClick}
@@ -23,6 +24,6 @@ export default function MobileNavLink({ url, text, closeMenu }: MobileNavLink) {
       >
         {text}
       </Link>
-    </a>
+    </li>
   );
 }
