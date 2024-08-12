@@ -5,14 +5,18 @@ import type { NavLinkProps } from '../../interfaces/interfaces.navbar';
 
 export default function NavLink({ url, text }: NavLinkProps) {
   const path = usePathname();
+  console.log('----------------------');
+
+  console.log(path);
+  console.log(url);
 
   return (
     <li className="flex">
       <Link
         href={url}
-        className={`flex items-center mx-4 -mb-1 border-b-2 dark:border-transparent ${
-          path === url && 'dark:text-violet-400 dark:border-violet-400'
-        }}`}
+        className={`flex items-center mx-4 -mb-1 ${
+          path === '/en' + url ? 'border-b-2 border-black' : ''
+        } hover:border-b-2 hover:border-blue-500 hover:text-blue-500`}
       >
         {text}
       </Link>

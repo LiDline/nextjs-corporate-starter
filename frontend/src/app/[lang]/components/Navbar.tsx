@@ -9,6 +9,7 @@ import type { NavLinkProps } from '../interfaces/interfaces.navbar';
 
 import NavLink from './Navbar/NavLink';
 import MobileNavLink from './Navbar/MobileNavLink';
+import LiButton from './Navbar/LiButton';
 
 export default function Navbar({
   links,
@@ -37,7 +38,7 @@ export default function Navbar({
               <NavLink key={item.id} {...item} />
             ))}
 
-            <>egrgdgdfhdhdt</>
+            <LiButton key={'call_me'} />
           </ul>
         </div>
 
