@@ -322,8 +322,7 @@ export interface LayoutLogo extends Schema.Component {
     description: '';
   };
   attributes: {
-    logoImg: Attribute.Media<'images' | 'files' | 'videos' | 'audios'> &
-      Attribute.Required;
+    logoImg: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     logoText: Attribute.String;
   };
 }
